@@ -4,7 +4,7 @@ MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install iVar
 RUN apk update && \
-    apk add autoconf automake bzip2-dev g++ make xz-dev zlib-dev && \
+    apk add autoconf automake bash bzip2-dev g++ make xz-dev zlib-dev && \
     wget -qO- "https://github.com/samtools/htslib/releases/download/1.12/htslib-1.12.tar.bz2" | tar -xj && \
     cd htslib-1.12 && \
     ./configure && \
