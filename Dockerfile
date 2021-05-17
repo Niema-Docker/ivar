@@ -18,4 +18,6 @@ RUN apk update && \
     make && \
     make install && \
     cd .. && \
+    wget -o /usr/local/bin/ivar_variants_to_vcf.py "https://raw.githubusercontent.com/Niema-Docker/ivar/main/ivar_variants_to_vcf.py" && \
+    chmod a+x /usr/local/bin/ivar_variants_to_vcf.py && \
     rm -rf htslib-1.12 ivar-1.3.1
