@@ -1,5 +1,5 @@
 # Minimal Docker image for iVar v1.3.1 using Alpine base
-FROM alpine:latest
+FROM alpine:3.13.5
 MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 
 # install iVar
