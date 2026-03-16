@@ -5,13 +5,13 @@ MAINTAINER Niema Moshiri <niemamoshiri@gmail.com>
 # install iVar
 RUN apk update && \
     apk add autoconf automake bash bzip2-dev g++ make python3 xz-dev zlib-dev && \
-    wget -qO- "https://github.com/samtools/htslib/releases/download/1.17/htslib-1.17.tar.bz2" | tar -xj && \
+    wget -qO- "https://github.com/samtools/htslib/releases/download/1.23/htslib-1.23.tar.bz2" | tar -xj && \
     cd htslib-* && \
     ./configure && \
     make && \
     make install && \
     cd .. && \
-    wget -qO- "https://github.com/andersen-lab/ivar/archive/refs/tags/v1.4.2.tar.gz" | tar -zx && \
+    wget -qO- "https://github.com/andersen-lab/ivar/archive/refs/tags/v1.4.4.tar.gz" | tar -zx && \
     cd ivar-* && \
     sh autogen.sh && \
     ./configure --disable-dependency-tracking && \
